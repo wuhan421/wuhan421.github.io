@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wuhan421 的科技风个人博客">
+  <meta name="theme-color" content="#050607">
+  <title>WUHAN421 // SYSTEM LOG</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <img id="background-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Apollo_IE_Suzuka.jpg/1920px-Apollo_IE_Suzuka.jpg" alt="">
+    <div class="background-shade"></div>
+    <div class="scanlines"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="返回首页">
+      <span class="wordmark-mark">W</span>
+      <span>WUHAN421</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#home" class="active">首页</a>
+      <a href="#logs">日志</a>
+    </nav>
+    <div class="top-actions">
+      <span class="system-dot" aria-hidden="true"></span>
+      <span class="status-copy">SYSTEM ONLINE</span>
+      <button id="focus-toggle" class="command-button" type="button">聚焦背景</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">APOLLO IE // INTENSA EMOZIONE</p>
+        <h1 id="hero-title">SYSTEM<br>LOG</h1>
+        <p class="hero-subtitle">技术笔记、CTF 记录与项目归档。</p>
+        <div class="signal-row" aria-label="系统状态">
+          <span>CORE 100%</span>
+          <span>LINK STABLE</span>
+          <span>MODE CTF</span>
+        </div>
+      </div>
+
+      <aside class="telemetry" aria-label="遥测信息">
+        <div class="telemetry-heading">
+          <span>LIVE TELEMETRY</span>
+          <span class="telemetry-id">WK-421</span>
+        </div>
+        <time id="clock" class="clock">00:00:00</time>
+        <p id="date" class="date">2026.08.06 // THU</p>
+        <div class="reticle" aria-hidden="true">
+          <span class="reticle-core"></span>
+        </div>
+        <dl class="metrics">
+          <div><dt>NETWORK</dt><dd>ONLINE</dd></div>
+          <div><dt>SECURITY</dt><dd>ACTIVE</dd></div>
+          <div><dt>ARCHIVE</dt><dd>03 LOGS</dd></div>
+        </dl>
+      </aside>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span>SCROLL TO ACCESS</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <section id="logs" class="content-band" aria-labelledby="logs-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 // FIELD LOGS</p>
+          <h2 id="logs-title">最新日志</h2>
+        </div>
+        <p>记录漏洞思路、工具链与复盘过程。</p>
+      </div>
+
+      <div class="log-grid">
+        <article class="log-card featured">
+          <div class="card-index">LOG 001</div>
+          <div class="card-body">
+            <p class="card-meta">WEB SECURITY · 08.06.2026</p>
+            <h3>CTF Web 入门：从请求到漏洞定位</h3>
+            <p>建立一套可重复的侦察、验证与复盘流程，让每一步都有证据。</p>
+            <a href="posts/ctf-web.html" aria-label="阅读 CTF Web 入门文章">读取日志 <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="log-card">
+          <div class="card-index">LOG 002</div>
+          <div class="card-body">
+            <p class="card-meta">GITHUB · 08.05.2026</p>
+            <h3>GitHub Pages 部署记录</h3>
+            <p>静态网站、仓库结构与自动发布的最短路径。</p>
+            <a href="posts/github-pages.html" aria-label="阅读 GitHub Pages 部署记录">读取日志 <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="log-card">
+          <div class="card-index">LOG 003</div>
+          <div class="card-body">
+            <p class="card-meta">LINUX · 08.03.2026</p>
+            <h3>终端命令与排错清单</h3>
+            <p>把常用诊断命令整理成可快速调用的作战手册。</p>
+            <a href="posts/linux-checklist.html" aria-label="阅读终端命令与排错清单">读取日志 <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>WUHAN421 // SYSTEM LOG</span>
+    <span>BACKGROUND: <a href="https://commons.wikimedia.org/wiki/File:Apollo_IE_Suzuka.jpg" target="_blank" rel="noreferrer">APOLLO IE BY FUJITAKA DAIDOJI, CC BY 2.0</a></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
